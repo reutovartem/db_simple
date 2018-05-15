@@ -1,14 +1,25 @@
 {
-    "name": "dbsimple",
+    "name": "ra/dbsimple",
     "type": "library",
-    "keywords": ["db","simple","dklab/dbsimple"],
-    "description": "Quite old (PHP4-compatible) interface to work with various DBs created by dklab",
+    "keywords": ["db", "simple"],
+    "description": "Interface to work with various DBs.",
     "license": "LGPL",
+    "version": "1.0.5",
     "require": {
-        "php": ">=5.2.0"
+        "php": ">=5.6"
     },
-    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Dmitry Koterov",
+            "email": "dmitry.koterov@gmail.com"
+        }
+    ],
+    "repositories": [
+
+    ],
     "autoload": {
-        "classmap": ["DbSimple/"]
+        "psr-4": {
+            "": "src/"
+        }
     }
 }
